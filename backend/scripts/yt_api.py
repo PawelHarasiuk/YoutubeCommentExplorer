@@ -1,11 +1,11 @@
-import googleapiclient.discovery
+from googleapiclient import discovery
 import re
 import os
 
 class YTScraper:
     def __init__(self):
         self.API_KEY = os.getenv("YT_KEY")
-        self.youtube = googleapiclient.discovery.build('youtube', 'v3', developerKey=self.API_KEY)
+        self.youtube = discovery.build('youtube', 'v3', developerKey=self.API_KEY)
 
     def get_comments(self, video_id):
         comments = []
