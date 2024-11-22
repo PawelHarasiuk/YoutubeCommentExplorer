@@ -1,7 +1,5 @@
 from flask import Flask, request, jsonify
 from services.yt_service import evaluate_comments
-from scripts.yt_api import YTScraper
-from scripts.analize import predict_sentiment
 
 app = Flask(__name__)
 
@@ -12,5 +10,5 @@ def home():
     return jsonify(evaluated_comments)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5001)
 
