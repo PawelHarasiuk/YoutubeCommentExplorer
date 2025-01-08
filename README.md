@@ -1,6 +1,6 @@
 # YouTube-Comment-Analyzer
 
-## You can test our app here: <a href="http://18.184.20.16:8501">Analize youtube video</a>
+## You can test our app here: <a href="https://ec2-3-121-199-55.eu-central-1.compute.amazonaws.com">Analize youtube video</a>
 
 This project analyzes YouTube video comments to classify them as positive or negative using a sentiment analysis backend. The application consists of a **Streamlit frontend** and a **Flask backend** running in a Docker container, all deployed on an **AWS EC2 instance**.
 
