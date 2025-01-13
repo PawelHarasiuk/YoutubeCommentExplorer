@@ -49,13 +49,17 @@ if st.button("Submit"):
 
                     st.subheader("Detailed Comment Analysis:")
 
-                    st.write("### Negative Comments:")
-                    for i, comment in enumerate(negative_comments):
-                        st.write(f"**{i + 1}.** {comment}")
+                    col1, col2 = st.columns(2)
 
-                    st.write("### Positive Comments:")
-                    for i, comment in enumerate(positive_comments):
-                        st.write(f"**{i + 1}.** {comment}")
+                    with col1:
+                        st.write("### Negative Comments:")
+                        for i, comment in enumerate(negative_comments):
+                            st.write(f"**{i + 1}.** {comment}")
+
+                    with col2:
+                        st.write("### Positive Comments:")
+                        for i, comment in enumerate(positive_comments):
+                            st.write(f"**{i + 1}.** {comment}")
 
                 else:
                     st.error("Error: Unable to fetch analysis. Try again later.")
