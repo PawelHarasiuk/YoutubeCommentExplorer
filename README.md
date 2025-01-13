@@ -4,6 +4,12 @@
 
 This project analyzes YouTube video comments to classify them as positive or negative using a sentiment analysis backend. The application consists of a **Streamlit frontend** and a **Flask backend** running in a Docker container, all deployed on an **AWS EC2 instance**.
 
+## How to use
+
+<img width="789" alt="Zrzut ekranu 2025-01-13 o 12 15 11" src="https://github.com/user-attachments/assets/7ca7c47e-a2d8-42eb-b773-f8fa0a24e5f3" />
+
+Enter youtube link into text area and submit it to perform analise 
+
 ## Features
 
 - Submit a YouTube video link to analyze its comments.
